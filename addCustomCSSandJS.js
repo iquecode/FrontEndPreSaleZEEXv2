@@ -20,3 +20,4 @@ function addjs(js){
 addcss('style.css');
 addjs('main.js');
 addjs('sendemail.js');
+addjs('storageRefZ.js');

@@ -9,13 +9,18 @@
 	<script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script><script src="https://unpkg.com/moralis/dist/moralis.js"></script><!-- <script src="https://github.com/WalletConnect/walletconnect-monorepo/releases/download/1.6.2/web3-provider.min.js"></script> -->
 </head>
 <body>
-	<div class="logo"><img alt="" height="60%" src="logo.png" /></div>
+
+	<div class="logo"><img alt="" height="40%" src="logo.png" /></div>
 
 	<div class="ique_container_app">
 		<div class="container">
-			<p class="lead"><span class="ique_bold">Congratulations!</span> You have the opportunity to buy ZEEX on pre-sale at a big discount to the launch price.</p>
-			<p class="lead">You must have USDT or BNB in your MetaMask wallet <span class="ique_bold">(Binance Smart Chain network)</span> in this browser.</p>
-			<p class="lead" id="link-alternative"><small id="emailHelp">Don&#39;t have MetaMask or want to buy your ZEEX in another way? No problem, click here.</small></p>
+			
+			<div id="msg-sale">
+				<p class="lead"><span class="ique_bold">Congratulations!</span> You have the opportunity to buy ZEEX on pre-sale at a big discount to the launch price.</p>
+				<p class="lead">You must have USDT or BNB in your MetaMask wallet <span class="ique_bold">(Binance Smart Chain network)</span> in this browser.</p>
+				<p class="lead" id="link-alternative"><small id="emailHelp">Don&#39;t have MetaMask or want to buy your ZEEX in another way? No problem, click here.</small></p>
+			</div>
+			
 			<form class="container">
 				<div class="form-group">
 					<label for="InputName">Name</label> 
@@ -23,15 +28,56 @@
 				<div class="form-group">
 					<label for="InputEmail1">Email address</label>
 					<input aria-describedby="emailHelp" class="form-control" id="InputEmail" name="InputEmail" placeholder="Your email" type="email" /> <small id="emailHelp">We will never share your email with anyone.</small></div>
-				<div class="form-group">
+				
+					<div class="form-group">
+						<select id="seletc-USDTorBNB" class="custom-select" required>
+						  <option value="1">buy with USDT<span></option>
+						  <option value="2">buy with BNB<span></option>
+						</select>
+					</div>
+				
+				<div id="div-input-USDT" class="form-group">
 					<label for="InputUSDT">Amount of USDT to invest</label>
-					<input class="form-control" id="InputUSDT" min="1000" name="InputUSDT" placeholder="Minimum: 30 USDT (90.9 ZEEX)." type="number" /><small id="priceUSDTHelp">1 ZEEX = 0.33 USDT | 1 USDT = 3.0303 ZEEX.</small></div>
+					<input class="form-control" id="InputUSDT" min="30" name="InputUSDT" placeholder="Minimum: 30 USDT (90.9 ZEEX)." type="number" /><small id="priceUSDTHelp">1 ZEEX = 0.33 USDT | 1 USDT = 3.0303 ZEEX.</small>
+				</div>
+				<div id="div-input-BNB" class="form-group">
+					<label for="InputBNB">Amount of BNB to invest</label>
+					<input class="form-control" id="InputBNB" min="0.1" name="InputBNB" placeholder="Minimum: 0.1 BNB." type="number" /><small id="priceBNBHelp"></small>
+				</div>
+
+
 				<div class="ique_btn">
 					<span class="btn-dark" id="btn-buyZeex">Buy ZEEX </span>
 				</div>
 			</form>
 		</div>
 	</div>
+
+
+
+	<!-- Footer-->
+	<footer class="footer">
+		<div id="content-footer">
+			<p class="ique_bold">Our reputation and your safety are top priorities for us.</p>
+			<p class="ique_bold">This interface and the smart contract that automates transactions with ZEEX are secure, open source and auditable by the entire community.</p>
+			<p><a href="https://github.com/iquecode/FrontEndPreSaleZEEXv2" target="_blank">Front End Interface</a>  |
+			   <a href="https://bscscan.com/address/0x5377ad07a500cbb80c83a59e1de7e281ddb0d881" target="_blank">Smart Contract - BSCscan</a> - 
+			   <a href="https://github.com/iquecode/ZEEXswapContractV2" target="_blank">GitHub</a>
+			</p>
+		</div>
+	</footer>
+	<!-- Copyright Section-->
+	<!-- <div class="copyright py-4 text-center text-white">
+		<div class="container"><small>Copyright © ique.dev 2021</small></div>
+	</div> -->
+
+
+
+
+
+
+
+
 
 	<div aria-hidden="true" aria-labelledby="exampleModalLongTitle" class="modal fade" id="modalAlternative" role="dialog" tabindex="-1">
 		<div class="modal-dialog modal-lg" role="document">

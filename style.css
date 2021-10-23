@@ -3,6 +3,45 @@ h2, h1, p, label, small, #emailHelp {
     color: white;
 }
 
+footer p {
+    color: #455A64 !important; 
+    font-size: small !important;
+    margin: 0;
+    text-align: center;
+}
+
+.lead {
+    text-align: center !important;
+}
+
+footer a {
+    color: #455A64 !important; ;
+}
+
+footer {
+    /* background-color: #455A64; */
+    /* background-color: #1a252f; */
+    background-color: whitesmoke;
+    /* position: fixed;
+    bottom:0;
+    left:0; */
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#content-footer {
+    height: 70%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 body {
     background-color: #8f00b5;
 }
@@ -13,7 +52,7 @@ body {
 .logo {
     background-color: #0e0e13;
     display: flex;
-    height: 70px;
+    height: 100px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -83,4 +122,29 @@ body {
     justify-content: center !important;
     align-items: center !important;
     padding: 25px;
+}
+
+#msg-sale {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#t {
+    color: red !important;
+}
+
+#div-input-BNB {
+    display: none;
+}
+
+@media only screen and (min-width:550px) {
+    footer {
+       
+        position: fixed;
+        bottom:0;
+        left:0; 
+        
     }
+}
