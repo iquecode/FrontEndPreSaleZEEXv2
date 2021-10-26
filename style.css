@@ -44,11 +44,16 @@ footer {
 
 body {
     background-color: #8f00b5;
+    background-color: whitesmoke;
 }
 
 .ique_container_app {
-    margin-top: 70px;
+    background-color: #8f00b5;
 }
+
+/* .ique_container_app {
+    margin-top: 70px;
+} */
 .logo {
     background-color: #0e0e13;
     display: flex;
@@ -64,6 +69,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#ique-content-app {
+    margin-top: 70px;
 }
 
 .btn-dark, .btn-primary {
@@ -139,7 +148,7 @@ body {
     display: none;
 }
 
-@media only screen and (min-width:550px) {
+/* @media only screen and (min-width:550px) {
     footer {
        
         position: fixed;
@@ -147,4 +156,4 @@ body {
         left:0; 
         
     }
-}
+} */
